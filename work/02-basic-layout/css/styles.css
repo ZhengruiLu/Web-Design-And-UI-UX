@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+#homepage {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "localmenu main"
+    "footer footer"
+    ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 30% 1fr;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+}
+  
+.menu li:hover {
+    background-color: rebeccapurple;
+    color: white; 
+}
+
+.local-menu {
+    grid-area: localmenu;
+    line-height: 2;
+    background-color: pink;
+}
+
+.local-menu ul {
+    list-style-type: none;
+}
+
+.local-menu ul li:hover {
+    background-color: pink;
+}
+
+main {
+    grid-area: main;
+    background-color: pink;
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
