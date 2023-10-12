@@ -1,0 +1,236 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-r.css');
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+#homepage {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-areas: 
+    "logo h1"
+    ;
+    text-align: center; 
+    flex-direction: column; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-logo img{
+    grid-area: logo;
+    width: 4rem; /* Adjust the width using rem units */
+    height: 4rem; /* Adjust the height using rem units */
+}
+
+.header-logo h1{
+    grid-area: h1;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+  
+.menu li:hover {
+    background-color: rebeccapurple;
+    color: white; 
+}
+
+i.gg-arrow-down-r {
+    font-size: 0.5em; /* Adjust the size using em */
+}
+
+.gg-arrow-down-r {
+    display: block;
+    height: 1em;
+    transform: scale(var(--ggs,1));
+}
+
+main {
+    grid-area: main;
+    background-color: pink;
+    padding: 1rem;
+    height: 100%;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card__area {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px; 
+}
+
+.card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    background-color: white;
+    align-items: center;
+    height: 100%;
+}
+
+.card img {
+    width: 6rem; /* 1rem is equivalent to the root font size */
+    height: 9rem; /* Adjust as needed */
+}
+
+.card2 {
+    background-color: lightblue;
+}
+
+.card3 {
+    background-color: lightgoldenrodyellow;
+}
+
+h2 {
+    border: 1px solid blue;
+    border-radius: 1rem;
+}
+
+.card__more {
+    padding: 0.25rem;
+    margin: 0 auto;
+    margin-top: auto;
+    border: 3px solid yellowgreen;
+    border-radius: 1rem;
+    color: inherit;
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #0056b3; 
+}
+
+p {
+    margin: 1em 0em 1em 0em
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+    text-align: center; 
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+}
+  
+.footer-links a {
+    grid-column: span 4; 
+    text-decoration: none; 
+    font-size: 0.8rem; 
+    margin-right: 20px; 
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+@media(max-width: 50rem) {
+    #homepage {
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu li {
+        display: block; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .card__area {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%; 
+    }
+}
