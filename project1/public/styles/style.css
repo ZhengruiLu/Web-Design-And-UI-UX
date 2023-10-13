@@ -1,41 +1,15 @@
+/* 
+Extra Credit:
+1.Additional page content to provide context and ways to expand the site in the future.
+the content in index.html and about.html.
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 10rem; /* Changed to rem */
-    box-shadow: 0em 0.8em 1.6em 0em rgba(0,0,0,0.2); /* Changed to em */
-    z-index: 1;
-}
+2.Use of colors and borders to create distinct visual areas
+style.css.
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 1.2em 1.6em; /* Changed to em */
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  * {
+3.Strong use of whitespace and line-height to create clear, readable text
+style.css.
+*/
+* {
     box-sizing: border-box;
     margin: 0;
 }
@@ -65,21 +39,57 @@ header {
 
 .header-logo img{
     grid-area: logo;
-    width: 4rem; /* Adjust the width using rem units */
-    height: 4rem; /* Adjust the height using rem units */
+    width: 4rem; 
+    height: 4rem; 
 }
 
 .header-logo h1{
     grid-area: h1;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10rem; 
+    box-shadow: 0em 0.8em 1.6em 0em rgba(0,0,0,0.2); 
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1.2em 1.6em; 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .menu li {
     display: inline-block;
-    margin-right: 1.25em; /* Changed to em */
+    margin-right: 1.25em; 
 }
   
 .menu li:hover {
-    background-color:lightblue;
+    background-color:red;
     color: white; 
 }
 
@@ -97,8 +107,8 @@ h2 {
 }
 
 .card img {
-    width: 6rem; /* 1rem is equivalent to the root font size */
-    height: 9rem; /* Adjust as needed */
+    width: 6rem; 
+    height: 9rem;
 }
 
 .card1 {
@@ -199,7 +209,7 @@ span{
     display: flex;
     flex-direction: column;
     padding: 0.25rem;
-    border: 0.1rem solid gray; /* Updated border with rem unit */
+    border: 0.1rem solid gray; 
     border-radius: 1rem;
     align-items: center;
     width: 100%; 
@@ -242,7 +252,7 @@ span{
         display: flex;
         flex-direction: column;
         padding: 0.25rem;
-        border: 0.1rem solid gray; /* Updated border with rem unit */
+        border: 0.1rem solid gray; 
         border-radius: 1rem;
         align-items: center;
         height: 100%;
