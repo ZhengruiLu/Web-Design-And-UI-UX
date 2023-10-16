@@ -26,6 +26,13 @@ header {
     justify-content: center; 
 }
 
+.gg-arrow-down-r {
+    display: block;
+    height: 1rem;
+    transform: scale(var(--ggs,1));
+    border-radius: 4px;
+}
+
 .header-logo h1{
     grid-area: h1;
 }
