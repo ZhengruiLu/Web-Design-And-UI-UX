@@ -1,7 +1,7 @@
 "use strict";
 (function() {
     let toggleStatus = 0;
-    const toggleEl = document.querySelector(".dropbtn");
+    const toggleEl = document.querySelector(".drop-btn");
     const navEl = document.querySelector(".dropdown-content");
 
 
