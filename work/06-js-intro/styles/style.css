@@ -12,6 +12,10 @@ html {
     height: 100%;
 }
 
+body {
+    height: 100%;
+}
+
 header {
     grid-area: header;
     background-color: lightblue;
@@ -74,10 +78,6 @@ header {
 
 .dropdown-content.open {
     display: block;
-}
-
-.dropdown-content.open.close {
-    display: none;
 }
 
 .menu li {

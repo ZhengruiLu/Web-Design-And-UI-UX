@@ -6,13 +6,13 @@
 
 
     toggleEl.addEventListener("click", function() {
-        if (toggleStatus === 1) {
+        // if (toggleStatus === 1) {
             navEl.classList.toggle("open");
-            toggleStatus = 0;
-        }
-        else if (toggleStatus === 0) {
-            navEl.classList.toggle("close");
-            toggleStatus = 1;
-        }
+        //     toggleStatus = 0;
+        // }
+        // else if (toggleStatus === 0) {
+        //     navEl.classList.toggle("close");
+        //     toggleStatus = 1;
+        // }
     })
 })();
