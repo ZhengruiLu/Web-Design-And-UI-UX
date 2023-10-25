@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Throw a Birthday Party? ...For Your Cat</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="homepage">
+        <header>     
+            <div class="header-logo">
+                <a href="index.html">
+                  <img src="image/logo.jpg" alt="logo">
+                </a>
+                  <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
+              </div>  
+          <nav class="menubar">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <nav type="button" class="drop-btn" href="about.html">
+                    About
+                </nav>
+                <div class="dropdown-content">
+                  <a href="about-us.html">About Us</a>
+                  <a href="careers.html">Careers</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+               </li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <main>
+          <h2 class="main__title">
+            Registration Form: 
+        </h2>
+
+        <form class="register" action="/register" method="POST">
+          <p><span class="form-reminder">*</span> means this question is <span>required</span> to answer</p>
+
+          <!-- name -->
+          <div class="register__name">
+            <label for="name" required>
+                Name: 
+            </label>
+            <input id="name" type="text" name="name" placeholder="Your name here" required>
+          </div>
+
+          <!-- email -->
+          <div class="register__email register-email">
+            <label for="email" required>Email</label>
+            <span class="register-email__error">
+            This field is required
+            </span>
+            <input name="email" class="register-email__input" id="email" type="email">
+          </div>
+
+          <!-- confirm email -->
+          <div class="register__confirm register-confirm">
+            <label for="confirm">Confirm Email</label>
+            <span class="register-confirm__error">
+            This field must match the email
+            </span>
+            <input name="confirm" class="register-confirm__input" id="confirm" type="email">
+          </div>
+
+          <!-- checkbox: wants-spam -->
+          <div class="register__wants">
+            <label for="check">
+                Do you want us to send you annoying emails?
+            </label>
+            <input id="check" type="checkbox" name="wants-spam" checked/>
+          </div>
+
+          <!-- select menu: tier -->
+          <div class="register__tier">
+            <label for="tier" required>
+                Tier: 
+            </label>
+        
+            <select class="column" id="tier" name="tier" required>
+                <option value="silver"></option>
+                <option value="please_select" selected>Please Select</option>
+                <option value="1">Silver Tier</option>
+                <option value="2">Gold Tier</option>
+                <option value="3">Platinum Tier</option>
+            </select>
+          </div>
+
+          <button type="submit" class="register__submit">Register</button>
+        </form>
+        </main>
+        <footer>
+          We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+        </footer>
+      </div>
+</body>
+
+</html>
