@@ -40,24 +40,28 @@
             Registration Form: 
         </h2>
 
-        <form class="register" action="/register" method="POST">
+        <form class="register-form" action="/register" method="POST">
           <p><span class="form-reminder">*</span> means this question is <span>required</span> to answer</p>
 
           <!-- name -->
           <div class="register__name">
-            <label for="name" required>
+            <label for="name">
                 Name: 
             </label>
-            <input id="name" type="text" name="name" placeholder="Your name here" required>
+            <div class="register-name__error">
+              Name is required
+            </div>
+            <input class = "register-name__input" id="name" type="text" name="name" placeholder="Your name here">
           </div>
+
+          <!-- <div class="demo"></div>
+          <button class="button__add">Add</button> -->
 
           <!-- email -->
           <div class="register__email register-email">
-            <label for="email" required>Email</label>
-            <span class="register-email__error">
-            This field is required
-            </span>
-            <input name="email" class="register-email__input" id="email" type="email">
+            <label for="email">Email</label>
+            <div class="register-email__error"></div>
+            <input name="email" class="register-email__input" id="email" type="text">
           </div>
 
           <!-- confirm email -->
@@ -79,11 +83,11 @@
 
           <!-- select menu: tier -->
           <div class="register__tier">
-            <label for="tier" required>
+            <label for="tier" >
                 Tier: 
             </label>
         
-            <select class="column" id="tier" name="tier" required>
+            <select class="column" id="tier" name="tier" >
                 <option value="silver"></option>
                 <option value="please_select" selected>Please Select</option>
                 <option value="1">Silver Tier</option>

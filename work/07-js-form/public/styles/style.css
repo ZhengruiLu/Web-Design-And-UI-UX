@@ -213,21 +213,20 @@ span{
     width: 100%; 
 }
 
-.register-form,
-.register__name,
-.register__email,
-.register__confirm {
+
+
+.register__name{
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
 }
-.register-email__error,
-.register-confirm__error {
+
+
+.register-name__error {
     display: none;
     color: red;
 }
-.register-email--invalid .register-email__error,
-.register-confirm--invalid .register-email__error {
+.register-name__error .register-name--invalid {
     display: initial;
 }
 
