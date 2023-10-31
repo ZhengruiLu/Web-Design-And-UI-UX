@@ -38,14 +38,14 @@
   const registerFormEl = document.querySelector('.register-form');
   const nameEl = document.querySelector('.register-name__input');
   const nameGroupEl = document.querySelector('.register-name__error');
-  console.log("after setting ", nameGroupEl);
-  // const emailEl = document.querySelector('.register-email__input')
-  // const emailErrorEl = document.querySelector('.register-email__error');
+
+  const emailEl = document.querySelector('.register-email__input')
+  const emailErrorEl = document.querySelector('.register-email__error');
+  
   registerFormEl.addEventListener('submit', (e) => {
+    //Name validation - This error text will be always present in the HTML but the styling will make it shown/not shown
     let isNameInvalid = false;
-    console.log("before remove invalid class ", nameGroupEl);
     nameGroupEl.classList.remove('register-name--invalid');
-    console.log("after remove invalid class " ,nameGroupEl);
 
     const name = nameEl.value;
     console.log("name: ", name);
@@ -53,40 +53,36 @@
       console.log(nameGroupEl);
       nameGroupEl.classList.add('register-name--invalid');
       isNameInvalid = true;
-      // nameErrorEl.innerText = "Name is required";
       console.log('bad name');
     }
 
-    if (isNameInvalid) {
+    // Email Validation - This error text will NOT be present in the HTML, it is added/removed using .innerText when the validation fails
+    let isEmailInvalid = false;
+
+    const email = emailEl.value;
+    if (!email) {
+      isEmailInvalid = true;
+      emailErrorEl.innerText = "Email is required";
+      console.log('bad email');
+    }
+
+    if (isNameInvalid || isEmailInvalid) {
       e.preventDefault();
       // Todo: inform user
     }
-
-    // let isEmailInvalid = false;
-
-    // const email = emailEl.value;
-    // if (!email) {
-    //   isEmailInvalid = true;
-    //   emailErrorEl.innerText = "Email is required";
-    //   console.log('bad email');
-    // }
-
-    // if (isEmailInvalid) {
-    //   e.preventDefault();
-    //   // Todo: inform user
-    // }
   })
 
-  // emailEl.addEventListener('input',(e) => {
-  //   const email = e.target.value;
+  // Email Validation for invalid input
+  emailEl.addEventListener('input',(e) => {
+    const email = e.target.value;
 
-  //   if (!email) {
-  //     emailErrorEl.innerText = "Email is required";
-  //     console.log("email input test");
-  //   } else {
-  //     emailErrorEl.innerText = "";
-  //   }
-  // });
+    if (!email) {
+      emailErrorEl.innerText = "Email is required";
+      console.log("email input test");
+    } else {
+      emailErrorEl.innerText = "";
+    }
+  });
 
 
 

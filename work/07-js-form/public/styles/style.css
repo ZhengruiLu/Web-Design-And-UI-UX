@@ -226,8 +226,12 @@ span{
     display: none;
     color: red;
 }
-.register-name__error .register-name--invalid {
+.register-name--invalid {
     display: initial;
+}
+
+.register-email__error {
+    color: red;
 }
 
 /* desktop */
