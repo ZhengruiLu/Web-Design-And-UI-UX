@@ -37,5 +37,4 @@ app.post('/register', express.urlencoded({extended: false}), (req, res) => {
   `);
 });
 
-
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
