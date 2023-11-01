@@ -1,39 +1,5 @@
 "use strict";
 (function() {
-  // sample - add event listener
-  // const usernameEl = document.querySelector('.register-name__input');
-  // usernameEl.addEventListener('input',(e) => {
-  //   console.log(e.target.value);
-  // });
-
-  // sample - innerText
-  // let count = 0;
-  // const buttonEl = document.querySelector('.button__add');
-  // const demoEl = document.querySelector('.demo');
-  // buttonEl.addEventListener('click', () => {
-  //   count += 1;
-  //   demoEl.innerText = count;
-  // });
-
-  // sample - validation
-  // name validation
-
-  // const nameErrorEl = document.querySelector('.register-name__error');
-  
-  // validation will occur when user attempts to submit the form
-
-  // validation will occur when the "input" event occurs on the field
-  // nameEl.addEventListener('input',(e) => {
-  //   const name = e.target.value;
-
-  //   if (!name) {
-  //     nameErrorEl.innerText = "Name is required";
-  //   } else {
-  //     nameErrorEl.innerText = "";
-  //   }
-  // });
-
-
   // name validation
   const registerFormEl = document.querySelector('.register-form');
   const nameEl = document.querySelector('.register-name__input');
@@ -42,31 +8,38 @@
   const emailEl = document.querySelector('.register-email__input')
   const emailErrorEl = document.querySelector('.register-email__error');
   
+  const confirmInputEl = document.querySelector('.register-confirm__input');
+  const confirmErrorEl = document.querySelector('.register-confirm__error');
+
   registerFormEl.addEventListener('submit', (e) => {
     //Name validation - This error text will be always present in the HTML but the styling will make it shown/not shown
     let isNameInvalid = false;
     nameGroupEl.classList.remove('register-name--invalid');
 
     const name = nameEl.value;
-    console.log("name: ", name);
     if (!name) {
-      console.log(nameGroupEl);
       nameGroupEl.classList.add('register-name--invalid');
       isNameInvalid = true;
-      console.log('bad name');
     }
 
     // Email Validation - This error text will NOT be present in the HTML, it is added/removed using .innerText when the validation fails
     let isEmailInvalid = false;
+    let isConfirmEmailInvalid = false;
 
     const email = emailEl.value;
+    const confirmEmail = confirmInputEl.value;
+
     if (!email) {
       isEmailInvalid = true;
       emailErrorEl.innerText = "Email is required";
-      console.log('bad email');
     }
 
-    if (isNameInvalid || isEmailInvalid) {
+    if(!confirmEmail || email !== confirmEmail) {
+      isConfirmEmailInvalid = true;
+      confirmErrorEl.innerText = "This field must match confirm email";
+    }
+
+    if (isNameInvalid || isEmailInvalid || isConfirmEmailInvalid) {
       e.preventDefault();
       // Todo: inform user
     }
@@ -78,42 +51,20 @@
 
     if (!email) {
       emailErrorEl.innerText = "Email is required";
-      console.log("email input test");
     } else {
       emailErrorEl.innerText = "";
     }
   });
 
+  // Confirm Email Validation for invalid input
+  confirmErrorEl.addEventListener('input',(e) => {
+    const confirmEmail = confirmInputEl.value;
 
-
-  // const formEl = document.querySelector('.register');
-  // console.log(formEl);
-  // const emailGroupEl = document.querySelector('.register__email');
-  // const confirmGroupEl = document.querySelector('.register__confirm');
-  // const emailInputEl = document.querySelector('.register-email__input');
-  // const confirmInputEl = document.querySelector('.register-confirm__input');
-
-  // formEl.addEventListener('submit', (event) => {
-  //   let isInvalid = false;
-  //   emailGroupEl.classList.remove('.register-email__error');
-  //   // emailGroupEl.classList.remove('.register-email--invalid');
-  //   confirmGroupEl.classList.remove('.register-confirm--invalid');
-
-  //   if( !emailInputEl.value ) {
-  //     emailGroupEl.classList.add('.register-email__error');
-  //     // emailGroupEl.classList.add('.register-email--invalid');
-  //     isInvalid = true;
-  //   }
-
-  //   if( !confirmInputEl.value ) {
-  //     confirmGroupEl.classList.add('.register-confirm--invalid');
-  //     isInvalid = true;
-  //   }
-
-  //   if( isInvalid ) {
-  //     event.preventDefault();
-  //   }
-  // })
-
-
+    if (!confirmEmail) {
+      confirmErrorEl.innerText = "This field must match confirm email";
+      console.log("email input test");
+    } else {
+      confirmErrorEl.innerText = "";
+    }
+  });
 })();

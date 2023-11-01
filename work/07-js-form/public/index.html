@@ -46,31 +46,27 @@
           <!-- name -->
           <div class="register__name">
             <label for="name">
-                Name: 
+                Name: <span class="form-reminder">*</span>
             </label>
             <div class="register-name__error">
               Name is required
             </div>
-            <input class = "register-name__input" id="name" type="text" name="name" placeholder="Your name here">
+            <input class = "register-name__input" id="name" type="text" name="name" placeholder="this field is required">
           </div>
-
-          <!-- <div class="demo"></div>
-          <button class="button__add">Add</button> -->
 
           <!-- email -->
           <div class="register__email register-email">
-            <label for="email">Email</label>
+            <label for="email">Email: <span class="form-reminder">*</span></label>
             <div class="register-email__error"></div>
-            <input name="email" class="register-email__input" id="email" type="text">
+            <input name="email" class="register-email__input" id="email" type="text" placeholder="this field is required">
           </div>
 
           <!-- confirm email -->
           <div class="register__confirm register-confirm">
-            <label for="confirm">Confirm Email</label>
+            <label for="confirm">Confirm Email: <span class="form-reminder">*</span></label>
             <span class="register-confirm__error">
-            This field must match the email
             </span>
-            <input name="confirm" class="register-confirm__input" id="confirm" type="email">
+            <input name="confirm" class="register-confirm__input" id="confirm" type="text" placeholder="this field is required">
           </div>
 
           <!-- checkbox: wants-spam -->

@@ -215,7 +215,9 @@ span{
 
 
 
-.register__name{
+.register__name, .register__email, 
+.register__confirm, 
+.register__tier {
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -230,12 +232,13 @@ span{
     display: initial;
 }
 
-.register-email__error {
+.register-email__error,.register-confirm__error {
     color: red;
+    font-weight: bold;
 }
 
 /* desktop */
-@media(min-width: 50rem) {
+@media(min-width: 40rem) {
     #homepage {
         display: grid;
         grid-template-areas: 
@@ -276,4 +279,16 @@ span{
         align-items: center;
         height: 100%;
     }    
+
+    .register__name, .register__email, 
+    .register__confirm, .register__wants,
+    .register__tier {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .register-form label {
+        margin-right: 2%; 
+    }
+
 }
