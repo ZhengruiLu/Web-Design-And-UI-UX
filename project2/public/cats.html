@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Throw a Birthday Party? ...For Your Cat</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="homepage">
+      <header>     
+        <nav class="menubar">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="image/logo.jpg" alt="logo">
+            </a>
+            <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
+          </div>   
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cats.html">Cat Events</a></li>
+            <li><a href="register.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+        
+        <main>
+          <div class="card__area">
+            <div class="card card1">
+              <h3 class="card__title">
+                Flowers
+              </h3>
+              <img src="image/cat1.jpg" alt="cat1">
+              <p>Smell flowers outside.</p>
+              <!-- Trigger/Open The Modal -->
+              <button id="myBtn">Subscribe</button>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form class="register-form" action="/register" method="POST">
+                    <p><span class="form-reminder">*</span> means this question is <span>required</span> to answer</p>
+          
+                    <!-- name -->
+                    <div class="register__name">
+                      <label for="name">
+                          Name: <span class="form-reminder">*</span>
+                      </label>
+                      <div class="register-name__error">
+                        Name is required
+                      </div>
+                      <input class = "register-name__input" id="name" type="text" name="name" placeholder="this field is required">
+                    </div>
+          
+                    <!-- email -->
+                    <div class="register__email register-email">
+                      <label for="email">Email: <span class="form-reminder">*</span></label>
+                      <div class="register-email__error"></div>
+                      <input name="email" class="register-email__input" id="email" type="text" placeholder="this field is required">
+                    </div>
+          
+                    <!-- confirm email -->
+                    <div class="register__confirm register-confirm">
+                      <label for="confirm">Confirm Email: <span class="form-reminder">*</span></label>
+                      <span class="register-confirm__error">
+                      </span>
+                      <input name="confirm" class="register-confirm__input" id="confirm" type="text" placeholder="this field is required">
+                    </div>
+          
+                    <!-- checkbox: wants-spam -->
+                    <div class="register__wants">
+                      <label for="check">
+                          Do you want us to send you annoying emails?
+                      </label>
+                      <input id="check" type="checkbox" name="wants-spam" checked/>
+                    </div>
+          
+                    <!-- select menu: tier -->
+                    <div class="register__tier">
+                      <label for="tier" >
+                          Tier: 
+                      </label>
+                  
+                      <select class="column" id="tier" name="tier" >
+                          <option value="silver"></option>
+                          <option value="please_select" selected>Please Select</option>
+                          <option value="1">Silver Tier</option>
+                          <option value="2">Gold Tier</option>
+                          <option value="3">Platinum Tier</option>
+                      </select>
+                    </div>
+          
+                    <button type="submit" class="register__submit">Register</button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+    
+            <div class="card card2">
+              <h3 class="card__title">
+                Sing
+              </h3>
+              <img src="image/cat2.jpg" alt="cat2">
+              <p>Sing with your cat.</p>
+              <a class="card__more" href="#">Subscribe</a>
+            </div>
+    
+            <div class="card card3">
+              <h3 class="card__title">
+                Decoration
+              </h3>
+              <img src="image/cat3.jpg" alt="cat3">
+              <p>Decorate your cat with ribbons.</p>
+              <a class="card__more" href="#">Subscribe</a>
+            </div>
+
+            <div class="card card4">
+              <h3 class="card__title">
+                Friends
+              </h3>
+              <img src="image/cat4.jpg" alt="cat4">
+              <p>Invite friends</p>
+              <a class="card__more" href="#">Subscribe</a>
+            </div>
+
+            <div class="card card5">
+              <h3 class="card__title">
+                Boom!
+              </h3>
+              <img src="image/cat5.jpg" alt="cat5">
+              <p>Boom! Be careful!</p>
+              <a class="card__more" href="#">Subscribe</a>
+            </div>
+    
+            <div class="card card6">
+              <h3 class="card__title">
+                Cake
+              </h3>
+              <img src="image/cat6.jpg" alt="cat6">
+              <p>Birthday Cake.</p>
+              <a class="card__more" href="#">Subscribe</a>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <ul class="menu">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="career.html">Work For Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="social.html">Social Media</a></li>
+          </ul>
+        </footer>
+      </div>
+</body>
+</html>
