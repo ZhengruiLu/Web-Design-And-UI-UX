@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Throw a Birthday Party? ...For Your Cat</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div id="homepage">
-      <header>     
-        <nav class="menubar">
-          <div class="header-logo">
-            <a href="index.html">
-              <img src="image/logo.jpg" alt="logo">
-            </a>
-            <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
-          </div>   
+      <header id="shared-header"> 
+        <!-- title -->
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="image/logo.jpg" alt="logo">
+          </a>
+          <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
+        </div>
+    
+        <!-- nav -->
+        <nav class="menu-bar">
+          <div class="menu-div">
           <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cats.html">Cat Events</a></li>
-            <li><a href="register.html">About</a></li>
+            <li><a class="menuItem" href="index.html">Home</a></li>
+            <li><a class="menuItem" href="cats.html">Cat Events</a></li>
+            <li><a class="menuItem" href="register.html">About</a></li>
           </ul>
+        </div>
+          
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+          </button>
         </nav>
       </header>
         
@@ -34,21 +46,20 @@
               <img src="image/cat1.jpg" alt="cat1">
               <p>Smell flowers outside.</p>
               <!-- Trigger/Open The Modal -->
-              <button id="myBtn">Subscribe</button>
+              <button class="sub-button" type="button">Subscribe</button>
 
               <!-- The Modal -->
-              <div id="myModal" class="modal">
-
+              <div id="modal" class="modal open close">
                 <!-- Modal content -->
                 <div class="modal-content">
-                  <span class="close">&times;</span>
+                  <button class="close" id="close-button">&times;</button>
                   <form class="register-form" action="/register" method="POST">
                     <p><span class="form-reminder">*</span> means this question is <span>required</span> to answer</p>
           
                     <!-- name -->
                     <div class="register__name">
                       <label for="name">
-                          Name: <span class="form-reminder">*</span>
+                        Name: <span class="form-reminder">*</span>
                       </label>
                       <div class="register-name__error">
                         Name is required
@@ -97,7 +108,6 @@
                     <button type="submit" class="register__submit">Register</button>
                   </form>
                 </div>
-
               </div>
             </div>
     
