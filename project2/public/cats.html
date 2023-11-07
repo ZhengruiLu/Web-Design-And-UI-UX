@@ -46,69 +46,32 @@
               <img src="image/cat1.jpg" alt="cat1">
               <p>Smell flowers outside.</p>
               <!-- Trigger/Open The Modal -->
-              <button class="sub-button" type="button">Subscribe</button>
+              <button class="sub" type="button">Subscribe</button>
 
               <!-- The Modal -->
-              <div id="modal" class="modal open close">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <button class="close" id="close-button">&times;</button>
-                  <form class="register-form" action="/register" method="POST">
-                    <p><span class="form-reminder">*</span> means this question is <span>required</span> to answer</p>
-          
-                    <!-- name -->
-                    <div class="register__name">
-                      <label for="name">
-                        Name: <span class="form-reminder">*</span>
-                      </label>
-                      <div class="register-name__error">
-                        Name is required
-                      </div>
-                      <input class = "register-name__input" id="name" type="text" name="name" placeholder="this field is required">
-                    </div>
-          
-                    <!-- email -->
-                    <div class="register__email register-email">
-                      <label for="email">Email: <span class="form-reminder">*</span></label>
-                      <div class="register-email__error"></div>
-                      <input name="email" class="register-email__input" id="email" type="text" placeholder="this field is required">
-                    </div>
-          
-                    <!-- confirm email -->
-                    <div class="register__confirm register-confirm">
-                      <label for="confirm">Confirm Email: <span class="form-reminder">*</span></label>
-                      <span class="register-confirm__error">
-                      </span>
-                      <input name="confirm" class="register-confirm__input" id="confirm" type="text" placeholder="this field is required">
-                    </div>
-          
-                    <!-- checkbox: wants-spam -->
-                    <div class="register__wants">
-                      <label for="check">
-                          Do you want us to send you annoying emails?
-                      </label>
-                      <input id="check" type="checkbox" name="wants-spam" checked/>
-                    </div>
-          
-                    <!-- select menu: tier -->
-                    <div class="register__tier">
-                      <label for="tier" >
-                          Tier: 
-                      </label>
-                  
-                      <select class="column" id="tier" name="tier" >
-                          <option value="silver"></option>
-                          <option value="please_select" selected>Please Select</option>
-                          <option value="1">Silver Tier</option>
-                          <option value="2">Gold Tier</option>
-                          <option value="3">Platinum Tier</option>
-                      </select>
-                    </div>
-          
-                    <button type="submit" class="register__submit">Register</button>
-                  </form>
-                </div>
-              </div>
+              <dialog class="modal">
+                <h3>Subscribe to the Latest Events!</h3>
+                <!-- sample form -->
+                <form class="register-form" action="/register" method="POST">
+                  <!-- email -->
+                  <div class="register__email register-email">
+                    <label for="email">Email: <span class="form-reminder">*required</span></label>
+                    <div class="register-email__error"></div>
+                    <input name="email" class="register-email__input" id="email" type="text" placeholder="this field is required">
+                  </div>
+        
+                  <!-- confirm email -->
+                  <div class="register__confirm register-confirm">
+                    <label for="confirm">Confirm Email: <span class="form-reminder">*required</span></label>
+                    <span class="register-confirm__error">
+                    </span>
+                    <input name="confirm" class="register-confirm__input" id="confirm" type="text" placeholder="this field is required">
+                  </div>
+                  <button type="submit" class="register__submit">Register</button>
+                </form>
+
+                <button class="close" type="button">Close</button>
+              </dialog>
             </div>
     
             <div class="card card2">
