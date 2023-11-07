@@ -15,6 +15,7 @@ red
 blue
 white */
 /* common */
+/* all page */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +26,22 @@ html {
     height: 100%;
 }
 
+/* header */
+/* skip link */
+.skip-link {
+    background: burlywood;    
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+
+  /* main header */
 header {
     grid-area: header;
     background-color: burlywood;
@@ -57,41 +74,6 @@ header {
 .header-logo h1{
     grid-area: h1;
 }
-
-/* .dropdown {
-    float: left;
-    overflow: hidden;
-}
-  
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 10rem; 
-    box-shadow: 0em 0.8em 1.6em 0em rgba(0,0,0,0.2); 
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 0.5rem 0.5rem; 
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
 
 /* nav */
 .hamburger {
