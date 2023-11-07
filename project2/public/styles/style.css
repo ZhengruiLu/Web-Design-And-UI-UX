@@ -58,7 +58,7 @@ header {
     grid-area: h1;
 }
 
-.dropdown {
+/* .dropdown {
     float: left;
     overflow: hidden;
 }
@@ -91,7 +91,7 @@ header {
   
 .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 /* nav */
 .hamburger {

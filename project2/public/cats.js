@@ -1,5 +1,6 @@
 "use strict";
 (function() {
+  // this file is for shared ele in all pages
   // validation
     // name validation
     const registerFormEl = document.querySelector('.register-form');
@@ -72,12 +73,4 @@
   closeEl.addEventListener('click', () => {
     modalEl.close();
   });
-
-  // hamburger
-  const menu = document.querySelector(".menu");
-  const hamburger= document.querySelector(".hamburger");
-
-  hamburger.addEventListener("click", function() {
-    menu.classList.toggle("open");
-  })
 })();
