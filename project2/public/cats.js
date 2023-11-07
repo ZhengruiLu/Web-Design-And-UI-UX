@@ -2,7 +2,6 @@
 (function() {
   // this file is for shared ele in all pages
   // validation
-    // name validation
     const registerFormEl = document.querySelector('.register-form');
   
     const emailEl = document.querySelector('.register-email__input')

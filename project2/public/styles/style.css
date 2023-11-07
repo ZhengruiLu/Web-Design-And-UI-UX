@@ -1,19 +1,5 @@
 /* 
-colors:
-background:
-main page  - papayawhip
-header footer - burlywood
-div of text and image - #eee or #eeeeee
-nav hover - dodgerblue
-
-? lime 柠檬绿
-? lightcoral 橘红
-? black (with 0.7 opacity when used as a backdrop) 背景幕布
-
-color:
-red
-blue
-white */
+below CSS adapted from https://css.gg under the MIT License*/
 /* common */
 /* all page */
 * {
@@ -24,6 +10,48 @@ white */
 html {
     font-family: sans-serif;
     height: 100%;
+}
+
+/* standard */
+button {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.2;
+    font-size:1rem;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-05rem {
+    padding: 0.5rem;
+}
+
+.padding-1rem {
+    padding: 1rem;
+}
+
+.padding-2rem {
+    padding: 2rem;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-05rem {
+    margin: 0.5rem;
+}
+
+.margin-1rem {
+    margin: 1rem;
+}
+
+.margin-2rem {
+    margin: 2rem;
 }
 
 /* header */
@@ -62,8 +90,8 @@ header {
 
 .header-logo img{
     grid-area: logo;
-    width: 4rem; 
-    height: 4rem; 
+    width: 100px; 
+    height: 100px; 
 }
 
 .header-logo h1{
@@ -83,7 +111,6 @@ header {
 
 .menu-bar {
     background-color: burlywood;
-    padding-bottom: 0.5rem;
 }
 
 .menu {
@@ -119,8 +146,8 @@ h2 {
 }
 
 .card img {
-    width: 6rem; 
-    height: 9rem;
+    width: 200px; 
+    height: 200px;
 }
 
 .card {
@@ -128,6 +155,16 @@ h2 {
     border:0.7px solid #000;
 }
 
+/* form */
+/* sub-btn */
+.sub {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* form button */
 .register__submit, #register__close {
     padding: 0.5rem;
     margin: 0 auto;
@@ -143,12 +180,13 @@ h2 {
     background-color: lightcoral;
 }
 
+.register__submit, .close {
+    display: inline-block; 
+    margin-right: 2rem;
+  }
+
 .card a:hover {
     background-color: #0056b3; 
-}
-
-p {
-    margin: 1em 0em 1em 0em
 }
 
 /* footer */
@@ -226,8 +264,8 @@ input {
 }
 
 img {
-    width:200px;
-    height: 200px;
+    width:125px;
+    height: 125px;
     padding: 0.5rem; 
 }
 
