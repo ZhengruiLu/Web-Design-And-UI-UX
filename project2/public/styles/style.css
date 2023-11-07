@@ -47,11 +47,6 @@ header {
     background-color: burlywood;
 }
 
-.menu-bar {
-    background-color: burlywood;
-    padding-bottom: 0.5rem;
-}
-
 .header-logo {
     display: grid;
     grid-template-areas: 
@@ -86,6 +81,11 @@ header {
     background: burlywood;
 }
 
+.menu-bar {
+    background-color: burlywood;
+    padding-bottom: 0.5rem;
+}
+
 .menu {
     display: none;
 }
@@ -99,6 +99,10 @@ header {
   
 .menu.open li:hover {
     background-color:dodgerblue;
+}
+
+.menu.open .menu-item:hover {
+    color: white;
 }
 
 main {
@@ -124,15 +128,19 @@ h2 {
     border:0.7px solid #000;
 }
 
-.card__more {
+.register__submit, #register__close {
     padding: 0.5rem;
     margin: 0 auto;
     margin-top: auto;
-    border: 0.2rem solid yellowgreen;
+    border: 0.1rem solid black;
     border-radius: 1rem;
     color: inherit;
-    background-color: yellowgreen;
+    background-color: lime;
     text-decoration: none;
+}
+
+#register__close {
+    background-color: lightcoral;
 }
 
 .card a:hover {
@@ -172,10 +180,6 @@ label[required]:after {
 input {
     padding: 0.5rem;
     border: 0.1rem solid #ccc;
-}
-
-span{
-    color: red; 
 }
 
 /* mobile first design*/
@@ -245,7 +249,7 @@ img {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
 }
 
 .modal::backdrop {

@@ -28,9 +28,9 @@
         <nav class="menu-bar">
           <div class="menu-div">
           <ul class="menu">
-            <li><a class="menuItem" href="index.html">Home</a></li>
-            <li><a class="menuItem" href="cats.html">Cat Events</a></li>
-            <li><a class="menuItem" href="register.html">About</a></li>
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li><a class="menu-item" href="cats.html">Cat Events</a></li>
+            <li><a class="menu-item" href="register.html">About</a></li>
           </ul>
         </div>
           
@@ -61,7 +61,7 @@
                   <div class="register__email register-email">
                     <label for="email">Email: <span class="form-reminder">*required</span></label>
                     <div class="register-email__error"></div>
-                    <input name="email" class="register-email__input" id="email" type="text" placeholder="this field is required">
+                    <input name="email" class="register-email__input" id="email" type="text" >
                   </div>
         
                   <!-- confirm email -->
@@ -69,12 +69,12 @@
                     <label for="confirm">Confirm Email: <span class="form-reminder">*required</span></label>
                     <span class="register-confirm__error">
                     </span>
-                    <input name="confirm" class="register-confirm__input" id="confirm" type="text" placeholder="this field is required">
+                    <input name="confirm" class="register-confirm__input" id="confirm" type="text">
                   </div>
                   <button type="submit" class="register__submit">Register</button>
+                  <button type="button" class="close" id="register__close">Close</button>
                 </form>
 
-                <button class="close" type="button">Close</button>
               </dialog>
             </div>
     
