@@ -1,0 +1,401 @@
+/* 
+below CSS adapted from https://css.gg under the MIT License*/
+/* common */
+/* all page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+/* standard */
+button {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.2;
+    font-size:1rem;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-05rem {
+    padding: 0.5rem;
+}
+
+.padding-1rem {
+    padding: 1rem;
+}
+
+.padding-2rem {
+    padding: 2rem;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-05rem {
+    margin: 0.5rem;
+}
+
+.margin-1rem {
+    margin: 1rem;
+}
+
+.margin-2rem {
+    margin: 2rem;
+}
+
+/* header */
+/* skip link */
+.skip-link {
+    background: burlywood;    
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+
+  /* main header */
+header {
+    grid-area: header;
+    background-color: burlywood;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-areas: 
+    "logo h1"
+    ;
+    text-align: center; 
+    flex-direction: column; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-logo img{
+    grid-area: logo;
+    width: 100px; 
+    height: 100px; 
+}
+
+.header-logo h1{
+    grid-area: h1;
+}
+
+/* nav */
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: burlywood;
+}
+
+.menu-bar {
+    background-color: burlywood;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: right;
+}
+  
+.menu.open li:hover {
+    background-color:dodgerblue;
+}
+
+.menu.open .menu-item:hover {
+    color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: papayawhip;
+    padding: 1rem;
+    height: 100%;
+    line-height: 1.3; /* Adjust line height for readability */
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 200px; 
+    height: 200px;
+}
+
+.card {
+    background-color: #eee;
+    border:0.7px solid #000;
+}
+
+/* form */
+/* sub-btn */
+.sub {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* form button */
+.register__submit, #register__close {
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: auto;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    color: inherit;
+    background-color: lime;
+    text-decoration: none;
+}
+
+#register__close {
+    background-color: lightcoral;
+}
+
+.register__submit, .close {
+    display: inline-block; 
+    margin-right: 2rem;
+  }
+
+.card a:hover {
+    background-color: #0056b3; 
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    background-color: burlywood;
+    text-align: left; 
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: left;
+}
+    
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+}
+  
+label[required]:after {
+    content: "*"; 
+    color: red; 
+    margin-left: 0.4rem; 
+}
+
+input {
+    padding: 0.5rem;
+    border: 0.1rem solid #ccc;
+}
+
+/* mobile first design*/
+#homepage {
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.card__area {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 0.1rem solid gray; 
+    border-radius: 1rem;
+    align-items: center;
+    width: 100%; 
+}
+/* home */
+/* text container 1 */
+.container, .container2 {
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+    border:0.7px solid #000;
+}
+
+.container2 {
+    border-top:none;
+}
+
+.text, .text2 {
+    padding: 0.5rem; 
+}
+
+img {
+    width:125px;
+    height: 125px;
+    padding: 0.5rem; 
+}
+
+.image {
+    float:right;
+}
+
+.image2 {
+    float: left;
+}
+
+/* modal window */
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 0.7 );
+}
+
+/* register form validation */
+.register__name, .register__email, 
+.register__confirm, 
+.register__tier {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+
+.register-name__error {
+    display: none;
+    color: red;
+}
+.register-name--invalid {
+    display: initial;
+}
+
+.register-email__error,.register-confirm__error {
+    color: red;
+    font-weight: bold;
+}
+
+/* desktop */
+@media(min-width: 44rem) {
+    #homepage {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+
+    /* hamburger menu */
+    .menu, .footer-menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* footer? */
+
+    /* panels */
+    .container, .container2 {
+        width: 100%;
+        display: flex;
+        background-color: #eee;
+        border:0.7px solid #000;
+    }
+    
+    .container {
+        margin-bottom: 0.5rem;
+    }
+    
+    .text, .text2 {
+        padding: 0.5rem; 
+    }
+    
+    img {
+        width:200px;
+        height: 200px;
+        padding: 0.5rem; 
+    }
+
+    /* cats page
+    card 
+    */
+    .card__area {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+    
+    .card {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border: 0.1rem solid gray; 
+        border-radius: 1rem;
+        align-items: center;
+        height: 100%;
+    }    
+
+    /* register form */
+    .register__name, .register__email, 
+    .register__confirm, .register__wants,
+    .register__tier {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .register-form label {
+        margin-right: 2%; 
+    }
+}
