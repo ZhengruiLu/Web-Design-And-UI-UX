@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} 
+
+.card {
+  padding: 2em;
+  /* keep on one line */
+  display: flex;
+  flex-direction: row; 
+  /* add some space between them and each other as well as the output text */
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: blanchedalmond;
+}
+
+/* Add more space between buttons */
+button {
+  margin: 0.5rem; 
+  color: #646cff;
+}
+
+/* When it appears, the reorder button will have a "fade in" animation*/
+.reorder-btn {
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
