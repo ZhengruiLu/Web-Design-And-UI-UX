@@ -187,6 +187,10 @@ span{
     margin-bottom: 0.8rem; 
 }
 
+.menu--hidden {
+    display: none;
+}
+
 .card__area {
     grid-template-columns: 1fr;
     display: flex;
@@ -228,6 +232,14 @@ span{
     .menu li {
         display: inline-block;
         margin-right: 1rem;
+    }
+
+    .menu--hidden {
+        display: flex;
+    }
+/* hide the menu button */
+    .menu__toggle {
+        display: none;
     }
     
     .card__area {

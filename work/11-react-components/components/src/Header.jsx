@@ -7,7 +7,7 @@ function Header() {
                   <img src="public/image/logo.jpg" alt="logo"/>
                   <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
             </div>
-            <GlobalNav></GlobalNav>
+            <GlobalNav className={"menubar"}></GlobalNav>
         </header>
     )
 }
