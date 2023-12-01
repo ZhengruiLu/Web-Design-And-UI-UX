@@ -36,42 +36,6 @@ header {
     grid-area: h1;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-  
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: green;
-    color:white;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 10rem; 
-    box-shadow: 0em 0.8em 1.6em 0em rgba(0,0,0,0.2); 
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 1.2em 1.6em; 
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-  
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .container, .container2 {
     width: 100%;

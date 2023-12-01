@@ -5,7 +5,8 @@ import Modal from './Modal';
 
 function Home({setPage}) {
   const modalRef = useRef();
-
+  
+//  pass a function as a prop to handle onClick for the generated button
   const [reminder, setReminder] = useState("");
 
   function showMessage(message) {
