@@ -6,18 +6,7 @@ import Cat from './Cat';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalNav from './GlobalNav';
-/*
-app
-useState: page, setPage(home)
-  header
-    globalNav setPage
-      link: 
-        home 
-        about 
-        cats
-  mainArea
-  footer
-*/
+
 function App() {
   const [page, setPage] = useState('Home');
   return (

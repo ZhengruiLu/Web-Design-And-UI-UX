@@ -39,6 +39,7 @@ function Button({
             disabled={disabled} type={type}
             onClick={handleClick}
         >
+            {/* conditionally render text */}
             {children}{clicked ? ' Button Is Clicked! ' : ''}
         </button>
     );
