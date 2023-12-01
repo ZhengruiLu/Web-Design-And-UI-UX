@@ -1,9 +1,13 @@
 import './App.css';
 import Button from './Button';
+import {useRef} from 'react';
+import Modal from './Modal';
 
 
 // change <main>
 function Home({setPage}) {
+  const modalRef = useRef();
+
   function go(event, page) {
     event.preventDefault();
     setPage(page);
@@ -15,15 +19,7 @@ function Home({setPage}) {
       Birthday Choices
     </h2>
     <div className="card__area">
-      {/* <Card 
-        cardNumber="card1"
-        title="Flowers"
-        pic={"image/cat1.jpg"}
-        alt="cat1"
-        text="Smell flowers outside."
-        onReadMore="more"
-        onClick={(e) => go(e, "About")}
-      ></Card> */}
+
     <div className="card card1">
       <h3 className="card__title">
         Flowers
@@ -39,7 +35,8 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat2.jpg" alt="cat2"/>
       <p>Sing with your cat.</p>
-      <Button type="button" visual="link">Button Link</Button>
+      <Button type="button" visual="link" onClick={() => modalRef.current.showModal()}>Open a Dialog</Button>
+      <Modal modalRef={modalRef}></Modal>
     </div>
 
     <div className="card card3">

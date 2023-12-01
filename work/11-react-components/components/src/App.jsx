@@ -20,9 +20,9 @@ useState: page, setPage(home)
 */
 function App() {
   const [page, setPage] = useState('Home');
-
   return (
     <div className='app'>
+
       <Header></Header>
         <GlobalNav setPage={setPage}></GlobalNav>
         {page === 'Home' && <Home setPage={setPage}/>}

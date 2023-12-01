@@ -179,6 +179,24 @@ p {
     margin: 1em 0em 1em 0em
 }
 
+/* modal window */
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 0.7 );
+}
+
+/* footer */
 footer {
     grid-area: footer;
     background-color: lightblue;
