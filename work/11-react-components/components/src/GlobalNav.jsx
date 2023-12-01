@@ -1,8 +1,11 @@
 import {useState} from 'react';
 
-function GlobalNav({className}) {
+function GlobalNav({className, setPage}) {
     const [showMenu, setShowMenu] = useState(false);
-
+    function go(event, page) {
+        event.preventDefault();
+        setPage(page);
+    }
     const menu = [
         {
         name: "Home",
@@ -21,7 +24,10 @@ function GlobalNav({className}) {
     const list = menu.map( item => {
         return (
             <li  key={item.id} className="global-nav__item">
-                <a className="global-nav__link" href={item.path}>
+                <a 
+                className="global-nav__link" 
+                href="" 
+                onClick={(e)=>go(e,`${item.name}`)}>
                     {item.name}
                 </a>
             </li>

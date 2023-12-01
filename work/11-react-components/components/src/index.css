@@ -72,6 +72,35 @@ header {
     display: block;
 }
 
+.container, .container2 {
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+    border:0.7px solid #000;
+}
+
+.container2 {
+    border-top:none;
+}
+
+.text, .text2 {
+    padding: 0.5rem; 
+}
+
+img {
+    width:125px;
+    height: 125px;
+    padding: 0.5rem; 
+}
+
+.image {
+    float:right;
+}
+
+.image2 {
+    float: left;
+}
+
 .menu li {
     display: inline-block;
     margin-right: 1.25em; 
@@ -258,4 +287,26 @@ span{
         align-items: center;
         height: 100%;
     }    
+
+        /* panels */
+        .container, .container2 {
+            width: 100%;
+            display: flex;
+            background-color: #eee;
+            border:0.7px solid #000;
+        }
+        
+        .container {
+            margin-bottom: 0.5rem;
+        }
+        
+        .text, .text2 {
+            padding: 0.5rem; 
+        }
+        
+        img {
+            width:200px;
+            height: 200px;
+            padding: 0.5rem; 
+        }
 }
