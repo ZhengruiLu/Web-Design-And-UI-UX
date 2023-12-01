@@ -147,7 +147,7 @@ h2 {
     border-radius: 1rem;
 }
 
-.card__more {
+.card__more, .button {
     padding: 0.25rem;
     margin: 0 auto;
     margin-top: auto;
@@ -156,7 +156,20 @@ h2 {
     color: inherit;
     background-color: yellowgreen;
     text-decoration: none;
+    cursor: pointer;
 }
+
+.button-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin: 0 auto;
+    margin-top: auto;
+}
+
 
 .card a:hover {
     background-color: #0056b3; 

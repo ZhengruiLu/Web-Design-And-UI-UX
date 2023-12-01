@@ -5,7 +5,8 @@ function Button({
     onClick,
     type="button",
     visual="button",
-    }) {
+    }) 
+    {
     let buttonClass = "button";
     if (visual === "link") {
         buttonClass = "button-link";

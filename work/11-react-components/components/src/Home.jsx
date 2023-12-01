@@ -1,4 +1,6 @@
 import './App.css';
+import Button from './Button';
+
 
 // change <main>
 function Home({setPage}) {
@@ -28,8 +30,7 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat1.jpg" alt="cat1"/>
       <p>Smell flowers outside.</p>
-      <a className="card__more" href="" onClick={(e) => go(e, "About")}>To About Page</a>
-  
+      <Button type="button" visual="button" onClick={(e) => go(e, "About")}>Redirect to About Page</Button>
     </div>
 
     <div className="card card2">
@@ -38,7 +39,7 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat2.jpg" alt="cat2"/>
       <p>Sing with your cat.</p>
-      <a className="card__more" href="#">Read More</a>
+      <Button type="button" visual="link">Button Link</Button>
     </div>
 
     <div className="card card3">
@@ -47,7 +48,7 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat3.jpg" alt="cat3"/>
       <p>Decorate your cat with ribbons.</p>
-      <a className="card__more" href="#">Read More</a>
+      <Button type="submit" visual="link">Submit Link</Button>
     </div>
   </div>
   </main>
