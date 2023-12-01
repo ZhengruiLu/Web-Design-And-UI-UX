@@ -1,17 +1,22 @@
 import './App.css';
 import Button from './Button';
-import {useRef} from 'react';
+import {useRef, useState} from 'react';
 import Modal from './Modal';
 
-
-// change <main>
 function Home({setPage}) {
   const modalRef = useRef();
+
+  const [reminder, setReminder] = useState("");
+
+  function showMessage(message) {
+    setReminder(message);
+  }
+
 
   function go(event, page) {
     event.preventDefault();
     setPage(page);
-}
+  }
 
   return (
     <main>
@@ -45,7 +50,8 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat3.jpg" alt="cat3"/>
       <p>Decorate your cat with ribbons.</p>
-      <Button type="button" visual="button">Read More</Button>
+      <p>{reminder}</p>
+      <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
     </div>
   </div>
   </main>
