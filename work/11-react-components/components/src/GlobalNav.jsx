@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Button from "./Button";
 
 function GlobalNav({className, setPage}) {
     const [showMenu, setShowMenu] = useState(false);
@@ -41,9 +42,9 @@ function GlobalNav({className, setPage}) {
 
     return (
         <nav className={`menu ${className}`}>
-            <button className="menu__toggle" onClick={() => setShowMenu(!showMenu)}>
+            <Button className="menu__toggle button" onClick={() => setShowMenu(!showMenu)}>
                 Menu
-            </button>
+            </Button>
             <ul className={`menu ${showMenuClass}`}>
             { list }
             </ul>

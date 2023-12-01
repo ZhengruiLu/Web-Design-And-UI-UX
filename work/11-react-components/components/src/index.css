@@ -168,6 +168,7 @@ h2 {
     padding: 0.25rem;
     margin: 0 auto;
     margin-top: auto;
+    font-size: 1rem;
 }
 
 
@@ -194,6 +195,29 @@ p {
 
 .modal::backdrop {
     background-color: rgb(0 0 0 / 0.7 );
+}
+
+/* register form validation */
+.register__name, .register__email, 
+.register__confirm, 
+.register__tier {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+
+.register-name__error {
+    display: none;
+    color: red;
+}
+.register-name--invalid {
+    display: initial;
+}
+
+.register-email__error,.register-confirm__error {
+    color: red;
+    font-weight: bold;
 }
 
 /* footer */
