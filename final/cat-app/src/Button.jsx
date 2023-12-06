@@ -9,25 +9,25 @@ function Button({
     visual="button",
     }) 
     {
-        const [clicked, setClicked] = useState(false);
+        // const [clicked, setClicked] = useState(false);
 
-        const handleClick = (event) => {
-            // use boolean handle reminder message
-            setClicked(true);
+        // const handleClick = (event) => {
+        //     // use boolean handle reminder message
+        //     setClicked(true);
 
-            //invoke onClick action
-            if (onClick) {
-                onClick(); 
-            }
+        //     //invoke onClick action
+        //     if (onClick) {
+        //         onClick(); 
+        //     }
 
-            //Clicking/submitting with ANY of the above options should NOT navigate the page
-            event.preventDefault(); 
+        //     //Clicking/submitting with ANY of the above options should NOT navigate the page
+        //     event.preventDefault(); 
 
-            // Set a timeout to reset the clicked state after 3 seconds
-            setTimeout(() => {
-                setClicked(false);
-            }, 3000);
-        };
+        //     // Set a timeout to reset the clicked state after 3 seconds
+        //     setTimeout(() => {
+        //         setClicked(false);
+        //     }, 3000);
+        // };
 
         let buttonClass = "button";
         if (visual === "link") {
@@ -37,10 +37,11 @@ function Button({
         <button
             className={`${buttonClass} ${className}`}
             disabled={disabled} type={type}
-            onClick={handleClick}
+            // onClick={handleClick}
         >
+            {children}
             {/* conditionally render text */}
-            {children}{clicked ? ' Button Is Clicked! ' : ''}
+            {/* {children}{clicked ? ' Button Is Clicked! ' : ''} */}
         </button>
     );
 }
