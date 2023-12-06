@@ -32,7 +32,9 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat1.jpg" alt="cat1"/>
       <p>Smell flowers outside.</p>
-      <a className="button-link" onClick={(e) => go(e, "About")}>Link to About Page</a>
+      <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
+
+      {/* <a className="button-link" onClick={(e) => go(e, "About")}>Link to About Page</a> */}
     </div>
 
     <div className="card card2">
@@ -41,8 +43,10 @@ function Home({setPage}) {
       </h3>
       <img src="image/cat2.jpg" alt="cat2"/>
       <p>Sing with your cat.</p>
-      <Button type="button" visual="link" onClick={() => modalRef.current.showModal()}>Register Form</Button>
-      <Modal modalRef={modalRef}></Modal>
+      <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
+
+      {/* <Button type="button" visual="link" onClick={() => modalRef.current.showModal()}>Register Form</Button> */}
+      {/* <Modal onClick={() => modalRef.current.close()}></Modal> */}
     </div>
 
     <div className="card card3">

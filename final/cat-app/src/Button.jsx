@@ -11,14 +11,14 @@ function Button({
     {
         // const [clicked, setClicked] = useState(false);
 
-        // const handleClick = (event) => {
+        const handleClick = (event) => {
         //     // use boolean handle reminder message
         //     setClicked(true);
 
         //     //invoke onClick action
-        //     if (onClick) {
-        //         onClick(); 
-        //     }
+            if (onClick) {
+                onClick(); 
+            }
 
         //     //Clicking/submitting with ANY of the above options should NOT navigate the page
         //     event.preventDefault(); 
@@ -27,7 +27,7 @@ function Button({
         //     setTimeout(() => {
         //         setClicked(false);
         //     }, 3000);
-        // };
+        };
 
         let buttonClass = "button";
         if (visual === "link") {
@@ -37,7 +37,7 @@ function Button({
         <button
             className={`${buttonClass} ${className}`}
             disabled={disabled} type={type}
-            // onClick={handleClick}
+            onClick={handleClick}
         >
             {children}
             {/* conditionally render text */}

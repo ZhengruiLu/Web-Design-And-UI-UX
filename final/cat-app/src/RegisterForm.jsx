@@ -59,8 +59,6 @@ function RegisterForm({
         </div> */}
         <button type="submit" className="register__submit" >Register</button>
 
-        {/* <Button type="submit" visual="button" className="register__submit" >Register</Button> */}
-        {/* <Button type="button" visual="button" className="close" id="register__close" onClick={onClick}>Close</Button> */}
       </form>
     );
 }

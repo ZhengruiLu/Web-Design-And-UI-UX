@@ -1,13 +1,15 @@
 import RegisterForm from "./RegisterForm";
+import Button from "./Button";
 
 function Modal({
-    modalRef
+    onClick
     }) 
     {
     return (
         <dialog className="modal" ref={modalRef}>
         <h3>Subscribe to the Latest Events!</h3>
-          <RegisterForm onClick={() => modalRef.current.close()}></RegisterForm>
+          <RegisterForm></RegisterForm>
+          <Button type="button" visual="button" className="close" id="register__close" onClick={onClick}>Close</Button>
         </dialog>
     )
 }
