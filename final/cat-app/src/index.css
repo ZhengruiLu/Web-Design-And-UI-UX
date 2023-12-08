@@ -238,6 +238,21 @@ p {
     text-align: left;
 }
 
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+.close-button:hover {
+    color: #000;
+}
+
 .modal::backdrop {
     background-color: rgb(0 0 0 / 0.7 );
 }
