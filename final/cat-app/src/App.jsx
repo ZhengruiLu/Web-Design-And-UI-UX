@@ -9,15 +9,20 @@ import GlobalNav from './GlobalNav';
 
 function App() {
   const [page, setPage] = useState('Home');
-  
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className='app'>
-      
-      <Header></Header>
-        <GlobalNav setPage={setPage}></GlobalNav>
-        {page === 'Home' && <Home setPage={setPage}/>}
-        {page === 'About' && <About/>}
-        {page === 'Cats' && <Cat/>}
+    <div className={`app ${theme}`}>
+      <Header toggleTheme={toggleTheme}></Header>
+      <GlobalNav setPage={setPage}></GlobalNav>
+      {/* Your page components */}
+      {page === 'Home' && <Home setPage={setPage} />}
+      {page === 'About' && <About />}
+      {page === 'Cats' && <Cat />}
       <Footer></Footer>
     </div>
   );

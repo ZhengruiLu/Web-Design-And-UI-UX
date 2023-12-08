@@ -1,11 +1,17 @@
+/* eslint-disable react/prop-types */
 import Modal from './Modal';
 import { useRef} from 'react';
 
 
-function Header() {
+function Header({ toggleTheme }) {
     const modalRef = useRef();
     return (
         <header className="header"> 
+            {/* Theme toggle button */}
+            <button className="theme-toggle" onClick={toggleTheme}>
+                Theme-
+            </button>
+            
             <button 
             className="register-modal-btn" 
             onClick={() => modalRef.current.showModal()}>
