@@ -2,6 +2,7 @@ import './App.css';
 import Button from './Button';
 import {useRef, useState} from 'react';
 import Modal from './Modal';
+import './skiplink.css';
 
 function Home({setPage}) {
   const modalRef = useRef();
@@ -20,6 +21,7 @@ function Home({setPage}) {
   }
 
   return (
+    <>
     <main>
     <h2 className="main__title">
       Birthday Choices
@@ -52,7 +54,8 @@ function Home({setPage}) {
         Enchanting experiences like a personalized serenade ("Sing") and a private
         feline karaoke session ("KTV").
       </p>
-      <Button
+    </div>
+    <Button
           className="card__btn"
         type="button"
         visual="button"
@@ -60,7 +63,6 @@ function Home({setPage}) {
       >
         Read More
       </Button>
-    </div>
   </div>
 
   <div className="card card3 common-card">
@@ -84,6 +86,7 @@ function Home({setPage}) {
   </div>
   </div>
   </main>
+  </>
   );
 }
 
