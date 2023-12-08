@@ -40,7 +40,7 @@ button {
   
   /* Hover effect for the theme toggle button */
   .theme-toggle:hover {
-    background-color: #555555; /* Dark theme button color on hover */
+    background-color:lightyellow; /* Dark theme button color on hover */
   }
 
   /* Dark theme styles */
@@ -271,6 +271,11 @@ footer {
     background-color: lightblue;
     text-align: center; 
 }
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
 .footer-links {
     display: grid;

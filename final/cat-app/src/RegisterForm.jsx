@@ -43,6 +43,7 @@ function RegisterForm({
             }  
         }}
         >
+          <h2>Register Form</h2>
         <span>* = required</span>
 
         {/* name */}
