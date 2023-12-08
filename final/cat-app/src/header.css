@@ -1,0 +1,34 @@
+header {
+    grid-area: header;
+    background-color: lightblue;
+    position: relative;
+}
+
+.header-btn-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+.header-logo {
+    display: grid;
+    grid-template-areas: 
+    "logo h1"
+    ;
+    text-align: center; 
+    flex-direction: column; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-logo img{
+    grid-area: logo;
+    width: 4rem; 
+    height: 4rem; 
+}
+
+.header-logo h1{
+    grid-area: h1;
+}

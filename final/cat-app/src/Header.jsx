@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Modal from './Modal';
 import { useRef} from 'react';
+import './header.css';
 
 
 function Header({ toggleTheme }) {

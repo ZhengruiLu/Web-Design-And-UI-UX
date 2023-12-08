@@ -20,6 +20,7 @@ button {
     cursor: pointer;
 }
 
+/* theme toggle */
   /* Light theme styles */
   .light {
     background-color: #ffffff;
@@ -49,45 +50,12 @@ button {
   }
   
   /* Light theme styles */
-  .light .theme-toggle::after {
+.light .theme-toggle::after {
     content: "Light Mode"; /* Text for light theme */
 }
 
-header {
-    grid-area: header;
-    background-color: lightblue;
-    position: relative;
-}
-
-.header-btn-div{
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-.header-logo {
-    display: grid;
-    grid-template-areas: 
-    "logo h1"
-    ;
-    text-align: center; 
-    flex-direction: column; 
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    justify-content: center; 
-}
-
-.header-logo img{
-    grid-area: logo;
-    width: 4rem; 
-    height: 4rem; 
-}
-
-.header-logo h1{
-    grid-area: h1;
-}
-
+/* header */
+/* cat page - panel */
 .container, .container2 {
     width: 100%;
     display: flex;
@@ -140,6 +108,7 @@ h2 {
     text-align: center;
 }
 
+/* home page - card */
 .card img {
     width: 6rem; 
     height: 9rem;
@@ -226,92 +195,9 @@ p {
     }
 
 /* modal window */
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: lightblue;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-.close-button:hover {
-    color: #000;
-}
-
-.modal::backdrop {
-    background-color: rgb(0 0 0 / 0.7 );
-}
-
 /* register form validation */
-.register__name, .register__email, 
-.register__confirm, 
-.register__tier {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-}
-
-
-.register-name__error {
-    display: none;
-    color: red;
-}
-.register-name--invalid {
-    display: initial;
-}
-
-.register-email__error,.register-confirm__error {
-    color: red;
-    font-weight: bold;
-}
 
 /* footer */
-footer {
-    grid-area: footer;
-    background-color: lightblue;
-    text-align: center; 
-}
-
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); 
-}
-  
-label[required]:after {
-    content: "*"; 
-    color: red; 
-    margin-left: 0.4rem; 
-}
-
-
-input {
-    padding: 0.5rem;
-    border: 0.1rem solid #ccc;
-}
-
-span{
-    color: red; 
-}
 
 /* mobile first design*/
 #homepage {

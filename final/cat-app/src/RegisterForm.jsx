@@ -1,6 +1,6 @@
 // import Button from "./Button";
 import {useId, useState} from 'react';
-
+import './register.css';
 function usernameIsValid(name) {
   return !!name;
 }
@@ -72,8 +72,8 @@ function RegisterForm({
           <input name="email" className="register-email__input" id={`${id}-email`} type="text" />
         </div>
 
-            {/* First Dropdown for Birthday Package */}
-            <div className="register__dropdown">
+        {/* First Dropdown for Birthday Package */}
+        <div className="register__dropdown">
         <label htmlFor="package-dropdown">Select Birthday Package: </label>
         <select
           id="package-dropdown"
