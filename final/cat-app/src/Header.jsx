@@ -7,7 +7,8 @@ function Header({ toggleTheme }) {
     const modalRef = useRef();
     return (
         <header className="header"> 
-            {/* Theme toggle button */}
+            <div className='header-btn-div'>
+                {/* Theme toggle button */}
             <button className="theme-toggle" onClick={toggleTheme}>
                 Theme-
             </button>
@@ -15,8 +16,10 @@ function Header({ toggleTheme }) {
             <button 
             className="register-modal-btn" 
             onClick={() => modalRef.current.showModal()}>
-                Register Here
+                Sign Up
             </button>
+            </div>
+            
             <Modal modalRef={modalRef}></Modal>
             <div className="header-logo">
                   <img src="/image/logo.jpg" alt="logo"/>

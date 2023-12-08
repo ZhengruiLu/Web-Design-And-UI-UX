@@ -7,7 +7,19 @@ html {
     font-family: sans-serif;
     height: 100%;
 }
-  
+
+button {
+    padding: 0.25rem;
+    margin: 0 auto;
+    margin-top: auto;
+    border: 0.2rem solid yellowgreen;
+    border-radius: 1rem;
+    color: inherit;
+    background-color: yellowgreen;
+    text-decoration: none;
+    cursor: pointer;
+}
+
   /* Light theme styles */
   .light {
     background-color: #ffffff;
@@ -23,16 +35,6 @@ html {
   
   /* Styles for the theme toggle button */
   .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: #333333; /* Dark theme button color */
-    color: #ffffff;
-    font-size: 16px;
-    outline: none;
     transition: background-color 0.3s; /* Transition for smoother color change */
   }
   
@@ -57,7 +59,7 @@ header {
     position: relative;
 }
 
-.register-modal-btn {
+.header-btn-div{
     position: absolute;
     top: 0;
     right: 0;
@@ -85,7 +87,6 @@ header {
 .header-logo h1{
     grid-area: h1;
 }
-
 
 .container, .container2 {
     width: 100%;
@@ -121,7 +122,6 @@ img {
     margin-right: 1.25em; 
 }
   
-
 .menu li:hover a{
     background-color:red;
     color: white; 
@@ -195,6 +195,35 @@ h2 {
 p {
     margin: 1em 0em 1em 0em
 }
+
+.card {
+    /* ... existing styles ... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* To align the text to the left */
+  }
+  
+  .card__image {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 200px; /* Adjust the max-width as needed */
+  }
+  
+  .card__text {
+    margin-top: 0.5rem; /* Adjust the margin as needed */
+    margin-left: 0.5rem;
+  }
+
+  .card__btn {
+    position: relative;
+    bottom: 0%;
+    }
 
 /* modal window */
 .modal{
