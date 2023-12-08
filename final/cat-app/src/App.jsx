@@ -6,21 +6,18 @@ import Cat from './Cat';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalNav from './GlobalNav';
-import RegisterForm from './RegisterForm';
-import Register from './Register';
 
 function App() {
   const [page, setPage] = useState('Home');
   
   return (
     <div className='app'>
-      <Header></Header>
       
+      <Header></Header>
         <GlobalNav setPage={setPage}></GlobalNav>
         {page === 'Home' && <Home setPage={setPage}/>}
         {page === 'About' && <About/>}
         {page === 'Cats' && <Cat/>}
-        {page === 'Register' && <Register/>}
       <Footer></Footer>
     </div>
   );

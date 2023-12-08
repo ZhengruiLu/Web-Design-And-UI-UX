@@ -28,10 +28,10 @@ function Home({setPage}) {
 
     <div className="card card1">
       <h3 className="card__title">
-        Flowers
+        Ball Ball Battle
       </h3>
       <img src="image/cat1.jpg" alt="cat1"/>
-      <p>Smell flowers outside.</p>
+      <p>Help your adorable feline friend catch as many colorful balls as possible!</p>
       <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
 
       {/* <a className="button-link" onClick={(e) => go(e, "About")}>Link to About Page</a> */}
@@ -42,7 +42,7 @@ function Home({setPage}) {
         Sing
       </h3>
       <img src="image/cat2.jpg" alt="cat2"/>
-      <p>Sing with your cat.</p>
+      <p>Enchanting experiences like a personalized serenade ("Sing") and a private feline karaoke session ("KTV").</p>
       <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
 
       {/* <Button type="button" visual="link" onClick={() => modalRef.current.showModal()}>Register Form</Button> */}
@@ -51,10 +51,10 @@ function Home({setPage}) {
 
     <div className="card card3">
       <h3 className="card__title">
-        Decoration
+        Catnip Party
       </h3>
       <img src="image/cat3.jpg" alt="cat3"/>
-      <p>Decorate your cat with ribbons.</p>
+      <p>Unforgettable moments, including a delightful "Catnip Party" and a lavish "Treat Buffet." </p>
       <p>{reminder}</p>
       <Button type="button" visual="button" onClick={()=>showMessage("Button Clicked!")}>Read More</Button>
     </div>

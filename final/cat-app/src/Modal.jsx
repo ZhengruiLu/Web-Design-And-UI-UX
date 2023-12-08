@@ -1,16 +1,22 @@
 import RegisterForm from "./RegisterForm";
-import Button from "./Button";
+import {useState} from 'react';
 
 function Modal({
-    onClick
+    modalRef
     }) 
     {
+
+      const [username, setUsername] = useState('');
+
+  function onRegister(name) {
+    setUsername(name)
+  }
     return (
-        <dialog className="modal" ref={modalRef}>
-        <h3>Subscribe to the Latest Events!</h3>
-          <RegisterForm></RegisterForm>
-          <Button type="button" visual="button" className="close" id="register__close" onClick={onClick}>Close</Button>
-        </dialog>
+      <dialog className="modal" ref={modalRef} >
+        <h2>{username && <p>Hello {username}</p>}</h2>
+        <RegisterForm onRegister={onRegister}></RegisterForm>
+        <button onClick={() => modalRef.current.close()}>Close</button>
+      </dialog>
     )
 }
 

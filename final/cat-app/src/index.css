@@ -11,7 +11,14 @@ html {
 header {
     grid-area: header;
     background-color: lightblue;
+    position: relative;
 }
+
+.register-modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
 .header-logo {
     display: grid;
