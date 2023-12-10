@@ -42,12 +42,14 @@ function GlobalNav({className="", setPage}) {
 
     return (
         <nav className={`menu ${className}`}>
+            <div className='menu'>
             <Button className="menu__toggle button" onClick={() => setShowMenu(!showMenu)}>
                 Menu
             </Button>
-            <ul className={`menu ${showMenuClass}`}>
+            <ul className={`menu ${showMenuClass}` }>
             { list }
             </ul>
+            </div>
         </nav>
     );
 }

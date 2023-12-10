@@ -1,18 +1,18 @@
 .skiplink {
     position: absolute;
     top: -40px;
-    left: 0;
+    left: 50%;
     background-color: #007bff;
     color: #fff;
     padding: 5px;
     z-index: 999;
     text-decoration: none;
-    opacity: 0; /* Make it invisible but still focusable */
+    opacity: 0; 
   }
   
   .skiplink:focus,
   .skiplink:active {
     position: static;
-    opacity: 1; /* Make it visible when focused or active */
+    opacity: 1; 
   }
   

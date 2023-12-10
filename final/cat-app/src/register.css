@@ -6,7 +6,6 @@
 }
 
 .register-name__error {
-    display: none;
     color: red;
 }
 .register-name--invalid {

@@ -51,7 +51,7 @@ function RegisterForm({
             <label htmlFor={`${id}-username`}>
                 Name: <span className="form-reminder">*</span>
             </label>
-            {usernameIsMissing && <div>
+            {usernameIsMissing && <div className='register-name__error'>
               Name is required
             </div>}
             <input 
