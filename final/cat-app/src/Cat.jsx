@@ -18,13 +18,13 @@ function Cat() {
           </p>
       </div>
       <div className="image">
-        <img src="image/cat1.jpg" alt="cat1"/>
+        <img className="text-image" src="image/cat1.jpg" alt="cat1"/>
       </div>
     </div>
 
     <div className="container2">
       <div className="image2">
-        <img src="image/cat2.jpg" alt="cat2"/>
+        <img className="text-image" src="image/cat2.jpg" alt="cat2"/>
       </div>
       <div className="text2">
         <h2>Make it Festive</h2>

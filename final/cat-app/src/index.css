@@ -75,10 +75,10 @@ button {
     padding: 0.5rem; 
 }
 
-img {
-    width:125px;
+.text-image {
+    width: 125px;
     height: 125px;
-    padding: 0.5rem; 
+    padding: 0.5rem;
 }
 
 .image {
@@ -115,8 +115,8 @@ h2 {
 
 /* home page - card */
 .card img {
-    width: 6rem; 
-    height: 9rem;
+    width: 8rem; 
+    height: 10rem;
 }
 
 .card1 {
@@ -317,8 +317,12 @@ p {
         }
         
         img {
-            width:200px;
-            height: 200px;
             padding: 0.5rem; 
+        }
+
+        .text-image {
+            width: 200px;
+            height: 200px;
+            padding: 0.5rem;
         }
 }

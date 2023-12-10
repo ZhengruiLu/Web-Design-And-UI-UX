@@ -32,3 +32,9 @@ header {
 .header-logo h1{
     grid-area: h1;
 }
+
+.logo_img {
+    width:125px;
+    height: 125px;
+    padding: 0.5rem; 
+}

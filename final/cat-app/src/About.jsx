@@ -1,18 +1,27 @@
+import './about.css';
+
 function About() {
     return (
       <main>
-          <h2 className="main__title">
-            About
-          </h2>
-          <p>
-          Pet parents can be pretty extra when it comes to their cats birthdays and adoption anniversaries. Not only do cats show unconditional love and affection (eh, sometimes), but according to science, they give owners the gift of better heart health. So it's time to show some appreciation. Throw your cat a party with floating balloons for entertainment. Sit back and watch your favorite furry family member go bonkers catching and popping all the balloons. Keep an eye on your kitty to make sure its not scared by the bursting balloons.
-          </p>
-          <p>
-              With an endless choice of available cat toys to buy, it should be easy to find, or even make, a brand-new birthday toy for your feline friend. Whether it likes active toys or something to cuddle up with, there is no better excuse than a birthday to add some new items to its already overflowing toy basket. If you are handy, make a new cat tree for a deluxe birthday gift.
-          </p>
-          <p>
-              Celebrate happy hour with your cat by giving it catnip. Give your cat catnip in several ways, including toys, catnip bubbles, or fresh leaves. For an occasion as special as your cat's birthday, make a soft catnip toy with this free, simple pattern. If you've never given your cat catnip before, try sprinkling just a few dried leaves onto a toy or climbing tower and see how it responds.
-          </p>
+      <h2 className="main__title">
+        Our Heartwarming Story
+      </h2>
+      <img src="/image/about.jpg" alt="About Us" className="about-image" />
+      <p>
+        Once upon a time, in a cozy little town, there lived a curious and playful cat named Whiskers. Whiskers wasn't just an ordinary cat; he was a furry bundle of joy that brought immense happiness to everyone he met.
+      </p>
+      <p>
+        Whiskers' birthday was approaching, and his caring owner, Emily, wanted to make it an unforgettable day. She stumbled upon Purr-fect Celebrations, a magical place dedicated to creating extraordinary moments for feline friends.
+      </p>
+      <p>
+        Inspired by the love for her furry companion, Emily decided to spread the joy. She not only organized a fabulous birthday bash for Whiskers but also donated to the Feline Friends Foundation. This fictitious non-profit organization works tirelessly to provide care and support to homeless and abandoned cats.
+      </p>
+      <p>
+        As Emily embraced the spirit of giving, she realized that birthdays are not just about celebrations; they are opportunities to make a difference in the lives of those who need it most. Whiskers' birthday became a symbol of love, compassion, and generosity.
+      </p>
+      <p>
+        At Purr-fect Celebrations, we invite you to be a part of heartwarming stories like Whiskers'. Your donations to the Feline Friends Foundation enable us to create more magical moments for cats in need. Join us in spreading love and joy to every furry friend, one celebration at a time.
+      </p>
     </main>
     );
   }

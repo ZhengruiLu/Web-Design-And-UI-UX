@@ -3,7 +3,6 @@ import Modal from './Modal';
 import { useRef} from 'react';
 import './header.css';
 
-
 function Header({ toggleTheme }) {
     const modalRef = useRef();
     return (
@@ -23,7 +22,7 @@ function Header({ toggleTheme }) {
             
             <Modal modalRef={modalRef}></Modal>
             <div className="header-logo">
-                  <img src="/image/logo.jpg" alt="logo"/>
+                  <img className='logo_img' src="/image/logo.jpg" alt="logo"/>
                   <h1>How to Throw a Birthday Party? ...For Your Cat</h1>
             </div>
         </header>
