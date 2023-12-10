@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 // Card.jsx
-// eslint-disable-next-line react/prop-types
 import Modal from './Modal';
 const Card = ({ title, imageSrc, altText, description, onClick }) => {
   return (

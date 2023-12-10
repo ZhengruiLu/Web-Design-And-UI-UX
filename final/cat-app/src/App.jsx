@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Home from './Home';
 import About from './About';
-import Cat from './Cat';
+import Charity from './Charity';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalNav from './GlobalNav';
@@ -28,7 +28,7 @@ function App() {
       <div  id="main-content">
       {page === 'Home' && <Home setPage={setPage} />}
       {page === 'About' && <About />}
-      {page === 'Cats' && <Cat />}
+      {page === 'Charity' && <Charity />}
       </div>
       <Footer></Footer>
     </div>
