@@ -67,7 +67,7 @@ function RegisterForm({
           </div>
  
         <div className="register__email register-email">
-          <label htmlFor={`${id}-email`}>Email: <span className="form-reminder">*</span></label>
+          <label htmlFor={`${id}-email`}>Email: </label>
           <div className="register-email__error"></div>
           <input name="email" className="register-email__input" id={`${id}-email`} type="text" />
         </div>

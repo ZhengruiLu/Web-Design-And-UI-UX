@@ -2,6 +2,7 @@ import './App.css';
 import {useRef} from 'react';
 import Modal from './Modal';
 import './skiplink.css';
+import Card from './Card';
 
 function Home() {
   const modalRef = useRef();
@@ -14,62 +15,62 @@ function Home() {
     </h2>
     <div className="card__area">
 
-  <div className="card card1">
-    <h3 className="card__title">Ball Ball Battle</h3>
-    <div className="card__content">
-      <img src="image/cat1.jpg" alt="cat1" className="card__image" />
-      <p className="card__text">
-        Help your adorable feline friend catch as many colorful balls as possible!
-      </p>
-    </div>
-    <button
-    className="card__btn"
-      type="button"
+    <Card
+      title="Ball Ball Battle"
+      imageSrc="image/cat1.jpg"
+      altText="Colorful Balls Catching"
+      description="Help your adorable feline friend catch as many colorful balls as possible!"
       onClick={() => modalRef.current.showModal()}
-    >
-      Order Now
-    </button>
+    />
     <Modal modalRef={modalRef}></Modal>
-  </div>
 
-  <div className="card card2 common-card">
-    <h3 className="card__title">Sing</h3>
-    <div className="card__content">
-      <img src="image/cat2.jpg" alt="cat2" className="card__image" />
-      <p className="card__text">
-        Enchanting experiences like a personalized serenade ("Sing") and a private
-        feline karaoke session ("KTV").
-      </p>
-    </div>
-    <button
-    className="card__btn"
-      type="button"
+    <Card
+      title="Sing"
+      imageSrc="image/cat2.jpg"
+      altText="Enchanting Serenade and KTV"
+      description="Enchanting experiences like a personalized serenade ('Sing') and a private feline karaoke session ('KTV')."
       onClick={() => modalRef.current.showModal()}
-    >
-      Order Now
-    </button>
+    />
     <Modal modalRef={modalRef}></Modal>
-  </div>
 
-  <div className="card card3 common-card">
-    <h3 className="card__title">Catnip Party</h3>
-    <div className="card__content">
-      <img src="image/cat3.jpg" alt="cat3" className="card__image" />
-      <p className="card__text">
-        Unforgettable moments, including a delightful "Catnip Party" and a lavish
-        "Treat Buffet."
-      </p>
 
-      <button
-    className="card__btn"
-      type="button"
+    <Card
+      title="Catnip Party"
+      imageSrc="image/cat3.jpg"
+      altText="Unforgettable Catnip Party and Treat Buffet"
+      description="Unforgettable moments, including a delightful 'Catnip Party' and a lavish 'Treat Buffet.'"
       onClick={() => modalRef.current.showModal()}
-    >
-      Order Now
-    </button>
+    />
     <Modal modalRef={modalRef}></Modal>
-    </div>
-  </div>
+
+
+    <Card
+      title="Ball Ball Battle"
+      imageSrc="image/cat1.jpg"
+      altText="Colorful Balls Catching"
+      description="Help your adorable feline friend catch as many colorful balls as possible!"
+      onClick={() => modalRef.current.showModal()}
+    />
+    <Modal modalRef={modalRef}></Modal>
+
+    <Card
+      title="Sing"
+      imageSrc="image/cat2.jpg"
+      altText="Enchanting Serenade and KTV"
+      description="Enchanting experiences like a personalized serenade ('Sing') and a private feline karaoke session ('KTV')."
+      onClick={() => modalRef.current.showModal()}
+    />
+    <Modal modalRef={modalRef}></Modal>
+
+    <Card
+      title="Catnip Party"
+      imageSrc="image/cat3.jpg"
+      altText="Unforgettable Catnip Party and Treat Buffet"
+      description="Unforgettable moments, including a delightful 'Catnip Party' and a lavish 'Treat Buffet.'"
+      onClick={() => modalRef.current.showModal()}
+    />
+    <Modal modalRef={modalRef}></Modal>
+
   </div>
   </main>
   </>
