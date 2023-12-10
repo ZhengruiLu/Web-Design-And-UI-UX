@@ -36,26 +36,30 @@ button {
   
   /* Styles for the theme toggle button */
   .theme-toggle {
-    transition: background-color 0.3s; /* Transition for smoother color change */
+    transition: background-color 0.3s; 
   }
   
   /* Hover effect for the theme toggle button */
   .theme-toggle:hover {
-    background-color:lightyellow; /* Dark theme button color on hover */
+    background-color:lightyellow; 
   }
 
   /* Dark theme styles */
 .dark .theme-toggle::after {
-    content: "Dark Mode"; /* Text for dark theme */
+    content: "Dark Mode"; 
   }
   
   /* Light theme styles */
 .light .theme-toggle::after {
-    content: "Light Mode"; /* Text for light theme */
+    content: "Light Mode"; 
 }
 
 /* header */
 /* cat page - panel */
+
+
+
+/* prev version */
 .container, .container2 {
     width: 100%;
     display: flex;
@@ -85,6 +89,7 @@ img {
     float: left;
 }
 
+/* menu */
 .menu li {
     display: inline-block;
     margin-right: 1.25em; 
@@ -294,7 +299,8 @@ p {
         height: 100%;
     }    
 
-        /* panels */
+    /* panels */
+    /* prev */
         .container, .container2 {
             width: 100%;
             display: flex;

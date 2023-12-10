@@ -1,25 +1,11 @@
 import './App.css';
-import Button from './Button';
-import {useRef, useState} from 'react';
+import {useRef} from 'react';
 import Modal from './Modal';
 import './skiplink.css';
 
-function Home({setPage}) {
+function Home() {
   const modalRef = useRef();
   
-//  pass a function as a prop to handle onClick for the generated button
-  const [reminder, setReminder] = useState("");
-
-  function showMessage(message) {
-    setReminder(message);
-  }
-
-
-  function go(event, page) {
-    event.preventDefault();
-    setPage(page);
-  }
-
   return (
     <>
     <main>
@@ -36,14 +22,14 @@ function Home({setPage}) {
         Help your adorable feline friend catch as many colorful balls as possible!
       </p>
     </div>
-    <Button
+    <button
     className="card__btn"
       type="button"
-      visual="button"
-      onClick={() => showMessage("Button Clicked!")}
+      onClick={() => modalRef.current.showModal()}
     >
-      Read More
-    </Button>
+      Order Now
+    </button>
+    <Modal modalRef={modalRef}></Modal>
   </div>
 
   <div className="card card2 common-card">
@@ -55,14 +41,14 @@ function Home({setPage}) {
         feline karaoke session ("KTV").
       </p>
     </div>
-    <Button
-          className="card__btn"
-        type="button"
-        visual="button"
-        onClick={() => showMessage("Button Clicked!")}
-      >
-        Read More
-      </Button>
+    <button
+    className="card__btn"
+      type="button"
+      onClick={() => modalRef.current.showModal()}
+    >
+      Order Now
+    </button>
+    <Modal modalRef={modalRef}></Modal>
   </div>
 
   <div className="card card3 common-card">
@@ -73,15 +59,15 @@ function Home({setPage}) {
         Unforgettable moments, including a delightful "Catnip Party" and a lavish
         "Treat Buffet."
       </p>
-      <p>{reminder}</p>
-      <Button
-        className="card__btn" 
-        type="button"
-        visual="button"
-        onClick={() => showMessage("Button Clicked!")}
-      >
-        Read More
-      </Button>
+
+      <button
+    className="card__btn"
+      type="button"
+      onClick={() => modalRef.current.showModal()}
+    >
+      Order Now
+    </button>
+    <Modal modalRef={modalRef}></Modal>
     </div>
   </div>
   </div>

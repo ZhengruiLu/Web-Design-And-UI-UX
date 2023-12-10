@@ -3,6 +3,7 @@ import './App.css';
 function Cat() {
   return (
     <main id="main">
+    <div className="card-container">
     <div className="container">
       <div className="text">
         <h2>Time it Right, Then Invite</h2>
@@ -37,7 +38,7 @@ function Cat() {
           </p>
       </div>
     </div>
-    
+    </div>
   </main>
   );
 }
