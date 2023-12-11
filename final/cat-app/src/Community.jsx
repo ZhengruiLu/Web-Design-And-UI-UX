@@ -64,7 +64,7 @@ const Community = () => {
                 </div>
                 <div className='user-intro'>
                     <p>{user.intro}</p>
-                    <p className='left-right'><i className="gg-mail-open"></i>
+                    <p className='left-right'><i className="gg-mail-open margin-left"></i>
                     {user.email}</p>
                 </div>
             </div>

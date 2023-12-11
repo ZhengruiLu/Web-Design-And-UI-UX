@@ -88,7 +88,7 @@ button {
 }
 
 /* menu */
-.menu li {
+/* .menu li {
     display: inline-block;
     margin-right: 1.25em; 
 }
@@ -96,7 +96,7 @@ button {
 .menu li:hover a{
     background-color:red;
     color: white; 
-}
+} */
 
 main {
     grid-area: main;
@@ -213,7 +213,7 @@ p {
     grid-template-rows: auto auto 1fr auto;
 }
 
-.menu {
+/* .menu {
     display: flex;
     flex-direction: column;
     background-color: lightblue;
@@ -227,7 +227,7 @@ p {
 
 .menu--hidden {
     display: none;
-}
+} */
 
 .card__area {
     grid-template-columns: 1fr;
@@ -260,7 +260,7 @@ p {
         height: 100%;
     }
 
-    .menu {
+    /* .menu {
         display: flex;
         list-style-type: none;
         justify-content: space-around;
@@ -274,11 +274,11 @@ p {
 
     .menu--hidden {
         display: flex;
-    }
+    } */
 /* hide the menu button */
-    .menu__toggle {
+    /* .menu__toggle {
         display: none;
-    }
+    } */
     
     .card__area {
         display: grid;

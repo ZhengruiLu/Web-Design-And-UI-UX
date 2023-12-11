@@ -53,6 +53,10 @@
     margin-bottom: 5px;
   }
 
+  .margin-left {
+    margin-right: 5px;
+  }
+
   /* desktop */
 @media(min-width: 50rem) {
     .user-area {

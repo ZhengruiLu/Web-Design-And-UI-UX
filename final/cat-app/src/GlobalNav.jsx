@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import Button from "./Button";
+import "./nav.css";
 
 function GlobalNav({className="", setPage}) {
     const [showMenu, setShowMenu] = useState(false);
