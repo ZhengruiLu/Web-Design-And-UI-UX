@@ -19,12 +19,12 @@ function App() {
     <>
     <a href="#main-content" className="skiplink">
         Skip to main content
-      </a>
+    </a>
     <div className={`app ${theme}`}>
       <Header toggleTheme={toggleTheme}></Header>
       <GlobalNav setPage={setPage}></GlobalNav>
 
-      <div  id="main-content">
+      <div id="main-content" className='main-content'>
       {page === 'Home' && <Home setPage={setPage} />}
       {page === 'About' && <About />}
       {page === 'Charity' && <Charity />}

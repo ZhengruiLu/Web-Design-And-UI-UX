@@ -61,7 +61,7 @@ function Home() {
     />
     <Modal modalRef={modalRef}></Modal>
 
-    <Card
+    <Card className="card"
       title="Gourmet Cat Cake"
       imageSrc="image/cat6.jpg"
       altText="Delicious Cat-friendly Cake"

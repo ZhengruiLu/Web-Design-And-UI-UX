@@ -3,7 +3,7 @@
 import Modal from './Modal';
 const Card = ({ title, imageSrc, altText, description, onClick }) => {
   return (
-    <div className="card common-card">
+    <div className="card">
       <h3 className="card__title">{title}</h3>
       <div className="card__content">
         <img src={imageSrc} alt={altText} className="card__image" />

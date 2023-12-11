@@ -34,7 +34,7 @@ const Community = () => {
   const filteredUsers = selectedCounty === 'All' ? users : users.filter(user => user.county === selectedCounty);
 
   return (
-    <main id="main">
+    <main id="main" className='main-community'>
       <h2 className="main__title">Community</h2>
 
       {/* Filter Section */}

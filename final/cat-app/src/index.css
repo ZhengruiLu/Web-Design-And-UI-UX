@@ -20,39 +20,6 @@ button {
     cursor: pointer;
 }
 
-/* theme toggle */
-  /* Light theme styles */
-  .light {
-    background-color: #ffffff;
-    color: #333333;
-  }
-
-  /* Dark theme styles */
-.dark {
-    background-color: #1a1a1a;
-    color: grey;
-    border-color: #333333;
-  }
-  
-  /* Styles for the theme toggle button */
-  .theme-toggle {
-    transition: background-color 0.3s; 
-  }
-  
-  /* Hover effect for the theme toggle button */
-  .theme-toggle:hover {
-    background-color:lightyellow; 
-  }
-
-  /* Dark theme styles */
-.dark .theme-toggle::after {
-    content: "Dark Mode"; 
-  }
-  
-  /* Light theme styles */
-.light .theme-toggle::after {
-    content: "Light Mode"; 
-}
 
 /* header */
 /* cat page - panel */
@@ -107,18 +74,6 @@ h2 {
 .card img {
     width: 8rem; 
     height: 10rem;
-}
-
-.card1 {
-    background-color: #CBC3E3;
-}
-
-.card2 {
-    background-color: lightblue;
-}
-
-.card3 {
-    background-color: lightgoldenrodyellow;
 }
 
 h2 {
@@ -218,6 +173,63 @@ p {
     align-items: center;
     width: 100%; 
 }
+
+/* theme toggle */
+  /* Light theme styles */
+  .light {
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  /* Dark theme styles */
+.dark {
+    background-color: #1a1a1a;
+    border-color: #333333;
+  }
+  
+.dark .main-content .card {
+    background-color: #1a1a1a;
+    color: white;
+    border-color: #333333;
+}
+
+.dark .main-content .main-about {
+    background-color: #1a1a1a;
+    color: white;
+    border-color: #333333;
+}
+
+.dark .main-content .main-charity .container{
+    background-color: #1a1a1a;
+    color: white;
+    border-color: #333333;
+}
+
+.dark .main-content .main-community .user-intro{
+    background-color: #1a1a1a;
+    color: white;
+    border-color: #333333;
+}
+  /* Styles for the theme toggle button */
+  .theme-toggle {
+    transition: background-color 0.3s; 
+  }
+  
+  /* Hover effect for the theme toggle button */
+  .theme-toggle:hover {
+    background-color:lightyellow; 
+  }
+
+  /* Dark theme styles */
+.dark .theme-toggle::after {
+    content: "Dark Mode"; 
+  }
+  
+  /* Light theme styles */
+.light .theme-toggle::after {
+    content: "Light Mode"; 
+}
+
 
 /* desktop */
 @media(min-width: 50rem) {

@@ -2,7 +2,7 @@ import './about.css';
 
 function About() {
     return (
-      <main>
+      <main className='main-about'>
       <h2 className="main__title">
         Our Heartwarming Story
       </h2>

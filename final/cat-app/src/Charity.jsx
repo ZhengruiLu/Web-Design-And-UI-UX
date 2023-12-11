@@ -2,7 +2,7 @@ import './App.css';
 
 function Charity() {
   return (
-    <main id="main">
+    <main id="main" className='main-charity'>
       <div className="card-container">
         <div className="container">
           <div className="text">
@@ -19,7 +19,7 @@ function Charity() {
           </div>
         </div>
 
-        <div className="container2">
+        <div className="container2 container">
           <div className="image2">
             <img className="text-image" src="image/cat2.jpg" alt="cat2" />
           </div>
