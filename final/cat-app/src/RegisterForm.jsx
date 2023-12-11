@@ -2,7 +2,7 @@
 import {useId, useState} from 'react';
 import './register.css';
 function usernameIsValid(name) {
-  return !!name;
+  return !!name && /^[a-zA-Z0-9]+$/.test(name);
 }
 
 function RegisterForm({
@@ -52,7 +52,7 @@ function RegisterForm({
                 Name: <span className="form-reminder">*</span>
             </label>
             {usernameIsMissing && <div className='register-name__error'>
-              Name is required
+              Name is required. Only letters and numbers are allowed.
             </div>}
             <input 
             className = "register-name__input" 
