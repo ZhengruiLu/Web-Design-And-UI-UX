@@ -6,7 +6,7 @@ import Charity from './Charity';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalNav from './GlobalNav';
-
+import Community from './Community';
 function App() {
   const [page, setPage] = useState('Home');
   const [theme, setTheme] = useState('light');
@@ -21,7 +21,7 @@ function App() {
         Skip to main content
       </a>
     <div className={`app ${theme}`}>
-      
+
       <Header toggleTheme={toggleTheme}></Header>
       <GlobalNav setPage={setPage}></GlobalNav>
       {/* Your page components */}
@@ -29,6 +29,7 @@ function App() {
       {page === 'Home' && <Home setPage={setPage} />}
       {page === 'About' && <About />}
       {page === 'Charity' && <Charity />}
+      {page === 'Community' && <Community/>}
       </div>
       <Footer></Footer>
     </div>

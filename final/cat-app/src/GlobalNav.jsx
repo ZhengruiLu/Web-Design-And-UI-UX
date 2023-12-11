@@ -19,6 +19,10 @@ function GlobalNav({className="", setPage}) {
         {
         name: "Charity",
         path: "/charity.html",
+        },
+        {
+        name: "Community",
+        path: "/community.html",
         }
     ];
 
