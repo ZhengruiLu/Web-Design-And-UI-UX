@@ -1,4 +1,3 @@
-// import Button from "./Button";
 import {useId, useState} from 'react';
 import './register.css';
 function usernameIsValid(name) {
@@ -80,7 +79,7 @@ function RegisterForm({
           value={selectedPackage}
           onChange={(e) => {
             setSelectedPackage(e.target.value);
-            setSelectedActivity(''); // Reset selected activity when changing package
+            setSelectedActivity(''); 
           }}
         >
           <option value="">Select Package</option>

@@ -8,7 +8,7 @@ function Header({ toggleTheme }) {
     return (
         <header className="header"> 
             <div className='header-btn-div'>
-                {/* Theme toggle button */}
+            {/* Theme toggle button */}
             <button className="theme-toggle" onClick={toggleTheme}>
                 Theme-
             </button>

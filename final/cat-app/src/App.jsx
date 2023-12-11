@@ -21,10 +21,9 @@ function App() {
         Skip to main content
       </a>
     <div className={`app ${theme}`}>
-
       <Header toggleTheme={toggleTheme}></Header>
       <GlobalNav setPage={setPage}></GlobalNav>
-      {/* Your page components */}
+
       <div  id="main-content">
       {page === 'Home' && <Home setPage={setPage} />}
       {page === 'About' && <About />}

@@ -88,22 +88,14 @@ button {
 }
 
 /* menu */
-/* .menu li {
-    display: inline-block;
-    margin-right: 1.25em; 
-}
-  
-.menu li:hover a{
-    background-color:red;
-    color: white; 
-} */
 
+/* main */
 main {
     grid-area: main;
     background-color: white;
     padding: 1rem;
     height: 100%;
-    line-height: 1.3; /* Adjust line height for readability */
+    line-height: 1.3; 
 }
 
 h2 {
@@ -130,7 +122,6 @@ h2 {
 }
 
 h2 {
-    /* Use of colors and borders to create distinct visual areas */
     border: 0.1em solid lightblue;
     border-radius: 1rem;
 }
@@ -169,7 +160,6 @@ p {
 }
 
 .card {
-    /* ... existing styles ... */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,16 +169,15 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left; /* To align the text to the left */
+    text-align: left; 
   }
   
   .card__image {
-    width: 100%; /* Ensure the image takes the full width of its container */
-    max-width: 200px; /* Adjust the max-width as needed */
+    width: 100%; 
   }
   
   .card__text {
-    margin-top: 0.5rem; /* Adjust the margin as needed */
+    margin-top: 0.5rem; 
     margin-left: 0.5rem;
   }
 
@@ -212,22 +201,6 @@ p {
 
     grid-template-rows: auto auto 1fr auto;
 }
-
-/* .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-}
-
-.menu li {
-    display: block; 
-    margin-right: 0; 
-    margin-bottom: 0.8rem; 
-}
-
-.menu--hidden {
-    display: none;
-} */
 
 .card__area {
     grid-template-columns: 1fr;
@@ -259,26 +232,6 @@ p {
         grid-template-columns: repeat(1, 1fr);
         height: 100%;
     }
-
-    /* .menu {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-    .menu li {
-        display: inline-block;
-        margin-right: 1rem;
-    }
-
-    .menu--hidden {
-        display: flex;
-    } */
-/* hide the menu button */
-    /* .menu__toggle {
-        display: none;
-    } */
     
     .card__area {
         display: grid;

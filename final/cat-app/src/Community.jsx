@@ -3,7 +3,7 @@ import './community.css';
 
 const Community = () => {
   const [selectedCounty, setSelectedCounty] = useState('All');
-
+// user samples
   const users = [
     {
       id: 1,
@@ -49,7 +49,6 @@ const Community = () => {
           <option value="Seattle">Seattle</option>
           <option value="Bellevue">Bellevue</option>
           <option value="Redmond">Redmond</option>
-          {/* Add more county options */}
         </select>
       </div>
 
