@@ -1,0 +1,34 @@
+.register__name, .register__email, 
+.register__dropdown {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.register-name__error {
+    color: red;
+}
+.register-name--invalid {
+    display: initial;
+}
+
+.register-email__error,.register-confirm__error {
+    color: red;
+    font-weight: bold;
+}
+  
+label[required]:after {
+    content: "*"; 
+    color: red; 
+    margin-left: 0.4rem; 
+}
+
+
+input {
+    padding: 0.5rem;
+    border: 0.1rem solid #ccc;
+}
+
+span{
+    color: red; 
+}

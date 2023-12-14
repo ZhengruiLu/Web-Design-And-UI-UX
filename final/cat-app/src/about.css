@@ -1,0 +1,16 @@
+.about-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* desktop */
+  @media (min-width: 50rem) {
+    .about-image {
+        width: 800px;
+    }
+  }
+  
