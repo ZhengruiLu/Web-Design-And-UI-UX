@@ -1,5 +1,8 @@
 # Web-Design-And-UI-UX
-INFO6150
+Include all of my course work of INFO6150. 
+
+Instructor:Brett Ritter
+https://github.com/seainfo6150 
 
 Key parts:
 - README - this document
@@ -11,5 +14,3 @@ Key parts:
 - [samples/](samples/) - This will appear when I have samples to offer. You should LEARN how these work rather than copying the files.
 - [project1/](project1/), [project2/](project2/), [final/](final/) - These will appear for the various projects and are where you get and submit those projects
 
-Instructor:
-https://github.com/seainfo6150
