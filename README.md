@@ -1,7 +1,7 @@
 # Web-Design-And-UI-UX
 Include all of my course work of INFO6150. 
 
-Instructor:Brett Ritter
+Instructor: Brett Ritter
 https://github.com/seainfo6150 
 
 Key parts:
